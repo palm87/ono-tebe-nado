@@ -5,7 +5,6 @@ body {
   background-color: #fff;
 }
 
-
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,7 +67,7 @@ body {
 
 .overlay {
   position: absolute;
-  inset:0;
+  inset: 0;
   background-color: rgb(0, 0, 0, 0.6);
   color: #fff;
   z-index: -1;
@@ -130,7 +129,7 @@ body {
 }
 
 .lots {
-  margin: auto 50px;;
+  margin: auto 50px;
 }
 
 .lots__heading {
@@ -248,9 +247,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: 180px 50px 90px 50px;
-}
-
-.footer__menu {
 }
 
 .footer__links-list {
