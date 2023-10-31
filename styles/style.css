@@ -69,35 +69,44 @@ body {
   position: absolute;
   inset: 0;
   background-color: rgb(0, 0, 0, 0.6);
-  color: #fff;
   z-index: -1;
 }
 
 .cover__title {
   color: #fff;
   font-size: 100px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 125%; /* 115px */
-  letter-spacing: 30px;
-  word-spacing: -25px;
+  line-height: 115%;
   text-transform: uppercase;
   padding-top: 160px;
   padding-left: 50px;
+  letter-spacing: -14px;
 }
 
 .cover__text {
   display: block;
+  margin-top: 20px;
 }
 
-.text-center {
+.aligned-text_center {
   text-align: center;
-  padding-right: 75px;
+  line-height: 100%;
 }
 
-.text-right {
+.aligned-text_right {
   text-align: right;
   padding-right: 25px;
+  line-height: 100%;
+}
+
+.no-letter-spacing {
+  font-kerning: none;
+  letter-spacing: 24px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+  font-kerning: none;
 }
 
 .cover__description {
@@ -107,7 +116,7 @@ body {
   color: black;
   gap: 78px;
   padding-right: 50px;
-  margin-top: 120px;
+  margin-top: 135px;
 }
 
 .cover__description-text {
@@ -141,6 +150,7 @@ body {
 
 .lots__card-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 25px;
@@ -154,6 +164,7 @@ body {
   min-height: 450px;
   width: 430px;
   position: relative;
+  flex-grow: 1;
 }
 
 .card_type_film {
@@ -213,13 +224,9 @@ body {
   border-radius: 50%;
   background-color: black;
   display: flex;
-  justify-content: start;
-  align-items: start;
-  justify-self: start;
-  align-self: flex-start;
 }
 
-.centerme {
+.logo_align-center {
   justify-self: center;
   align-self: flex-start;
 }
@@ -246,7 +253,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 180px 50px 90px 50px;
+  margin: 160px 50px 90px 50px;
 }
 
 .footer__links-list {
@@ -272,6 +279,7 @@ body {
   justify-content: space-between;
   width: 240px;
   height: 48px;
+  list-style: none;
 }
 
 .footer__social-icon {
